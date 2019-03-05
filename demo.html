@@ -1,0 +1,60 @@
+<html lang="en">
+	<head>
+		
+		
+		<title>Sign Up</title>
+	
+	</head>
+
+
+	<body>
+		
+
+	
+	<div align="center">				
+	<h1><center>Create your account </center></h1><br><br>
+	<form name='register' action="signup_confirm.php" method="post">  
+	
+	<div>
+	<label for="userid">Username:</label>   
+	<input type="text" name="userid" minlength="5" maxlength="50" required/>
+	</div>
+	<br>
+	<div>
+	<label for="passid">Password:</label>   
+	<input type="password" name="password" minlength="5" maxlength="50" required/>  
+	</div>
+	<br>
+	<div>
+	<label for="username">Name:</label>   
+	<input type="text" name="name" value=""   pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required/> 
+	</div>
+	<br>
+	<div>
+	<label for="contact">Contact Number:</label>   
+	<input value="+91" size="1" disabled><input type="text" name="contact" size="12" maxlength="10" pattern="[0-9-']+" required/>
+	</div>
+	<br>
+	<div>
+	<label for="email">Email:</label>   
+	<input type="email" name="email" size="12" required/>
+	</div>
+	<br>							 
+	<div>
+	<label for="address">Address:</label>   
+	<input type="text" name="address" size="40" required/> 
+	</div>
+	<br>
+	
+	
+	<input type="submit" name="submit" value="Submit" /> 
+	
+	
+	</form>
+	</div>
+		
+		
+		
+	</body>
+
+</html>
